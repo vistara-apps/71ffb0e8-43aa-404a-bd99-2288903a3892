@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useMiniKit } from '@coinbase/minikit';
 import { AppShell } from '@/components/AppShell';
 import { PrimaryButton } from '@/components/PrimaryButton';
 import { ProgressBar } from '@/components/ProgressBar';
@@ -14,7 +13,8 @@ import { generateMockData, formatPoints, getPointsForNextLevel } from '@/lib/uti
 import { RecyclingLog } from '@/lib/types';
 
 export default function HomePage() {
-  const { context } = useMiniKit();
+  // For now, we'll use mock data since MiniKit context isn't available in build
+  const context = null;
   const [data, setData] = useState(generateMockData());
   const [recentScans, setRecentScans] = useState<RecyclingLog[]>([]);
   const [activeTab, setActiveTab] = useState<'home' | 'rewards' | 'profile'>('home');
@@ -296,3 +296,6 @@ export default function HomePage() {
     </AppShell>
   );
 }
+
+// Force dynamic rendering to avoid SSR issues with wagmi
+export const dynamic = 'force-dynamic';
