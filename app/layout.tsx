@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-background">
+      <body className="min-h-screen bg-green-50">
         <Providers>
           {children}
         </Providers>
