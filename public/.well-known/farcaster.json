@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "RecycleRewards",
+    "subtitle": "Built with Zara",
+    "description": "RecycleRewards is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app",
+    "splashImageUrl": "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app/image.png",
+    "tagline": "RecycleRewards",
+    "screenshotUrls": [
+      "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app/screenshot.png",
+      "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://71ffb0e843aa404abd992288903a3892-2o1v.vercel.app/api/webhook"
+  }
+}
